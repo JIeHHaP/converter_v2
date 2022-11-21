@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g fill="none" fill-rule="evenodd">
+        <path class="ii-block" stroke="#0F0F10" d="M5.128.5h21.744c1.642 0 2.244.153 2.846.475.563.301 1.006.744 1.307 1.307.322.602.475 1.204.475 2.846h0v21.744c0 1.642-.153 2.244-.475 2.846-.301.563-.744 1.006-1.307 1.307-.602.322-1.204.475-2.846.475h0H5.128c-1.642 0-2.244-.153-2.846-.475-.563-.301-1.006-.744-1.307-1.307C.653 29.116.5 28.514.5 26.872h0V5.128c0-1.642.153-2.244.475-2.846.301-.563.744-1.006 1.307-1.307C2.884.653 3.486.5 5.128.5h0z"/>
+        <g class="ii-content" fill="#F5F5F5" fill-rule="nonzero">
+            <g>
+                <path d="M.091.064l4.05 10.047v.07L.09 23.985" transform="translate(8 4) translate(7.642)"/>
+                <path stroke="#0F0F10" stroke-linecap="round" stroke-width=".75" d="M.091.064l4.05 10.047v.07L.09 23.985" transform="translate(8 4) translate(7.642)"/>
+            </g>
+            <path d="M7.733.064L.052 11.947v.07l7.681 11.968" transform="translate(8 4)"/>
+            <path stroke="#0F0F10" stroke-linecap="round" stroke-width=".75" d="M7.733.064L.052 11.947v.07l7.681 11.968" transform="translate(8 4)"/>
+            <path stroke="#0F0F10" stroke-width=".75" d="M15.49 12.13l-3.727-1.921M.05 12.018l3.6 1.976m11.822-1.934l-3.69-1.949M.052 11.947l3.598 1.949" transform="translate(8 4)"/>
+            <g>
+                <path d="M4.124.064l7.758 11.996v.07L4.124 23.984m0-23.921l3.744 13.888v.07l-3.744 9.963m0-23.921L.041 13.896v.07l4.083 10.019" transform="translate(8 4) translate(3.609)"/>
+                <path stroke="#0F0F10" stroke-linecap="round" stroke-width=".75" d="M4.124.064l7.758 11.996v.07L4.124 23.984m0-23.921l3.744 13.888v.07l-3.744 9.963m0-23.921L.041 13.896v.07l4.083 10.019" transform="translate(8 4) translate(3.609)"/>
+            </g>
+            <g stroke="#0F0F10" stroke-width=".75">
+                <path d="M7.85 2.055l4.032-1.92M.041 2.001l7.827.072m0-.116L11.9.065M.004 1.904l7.846.07" transform="translate(8 4) translate(3.609 11.995)"/>
+            </g>
+        </g>
+    </g>
+</svg>

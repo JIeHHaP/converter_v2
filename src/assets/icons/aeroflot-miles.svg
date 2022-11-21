@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="272" viewBox="0 0 240 272">
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0H240V272H0z"/>
+        <g stroke="#0F0F10">
+            <path d="M95.965 31.858L96.219 160.645" transform="translate(24 80) rotate(66 96.092 96.252)"/>
+            <path d="M96.219 31.088L95.965 160.333" transform="translate(24 80) rotate(-24 96.092 95.71)"/>
+            <path d="M95.887 -0.186L96.297 192.783" transform="translate(24 80) rotate(81 96.092 96.298)"/>
+            <path d="M96.296 -0.703L95.888 192.371" transform="translate(24 80) rotate(-9 96.092 95.834)"/>
+            <path d="M95.982 31.806L96.202 160.487" transform="translate(24 80) rotate(96 96.092 96.147)"/>
+            <path d="M96.201 31.139L95.983 160.489" transform="translate(24 80) rotate(6 96.092 95.814)"/>
+            <path d="M96.012 -0.134L96.172 192.507" transform="translate(24 80) rotate(111 96.092 96.187)"/>
+            <path d="M96.171 -0.756L96.013 192.646" transform="translate(24 80) rotate(21 96.092 95.945)"/>
+            <path d="M96.109 30.923L96.075 159.833" transform="translate(24 80) rotate(126 96.092 95.378)"/>
+            <path d="M96.074 31.027L96.11 160.148" transform="translate(24 80) rotate(36 96.092 95.587)"/>
+            <path d="M96.217 -0.889L95.968 191.804" transform="translate(24 80) rotate(141 96.092 95.457)"/>
+            <path d="M95.967 -0.995L96.218 192.354" transform="translate(24 80) rotate(51 96.092 95.68)"/>
+            <path d="M95.945 63.816L96.072 128.21" transform="translate(24 80) rotate(88 96.009 96.013)"/>
+            <path d="M96.174 63.451L96.047 128.073" transform="translate(24 80) rotate(-2 96.11 95.762)"/>
+            <path d="M95.898 47.792L96.102 144.277" transform="translate(24 80) rotate(103 96 96.034)"/>
+            <path d="M96.189 47.551L95.985 144.088" transform="translate(24 80) rotate(13 96.087 95.82)"/>
+            <path d="M95.973 63.794L96.083 128.134" transform="translate(24 80) rotate(118 96.028 95.964)"/>
+            <path d="M96.145 63.473L96.036 128.148" transform="translate(24 80) rotate(28 96.09 95.81)"/>
+            <path d="M95.981 47.823L96.061 144.143" transform="translate(24 80) rotate(133 96.02 95.983)"/>
+            <path d="M96.106 47.52L96.027 144.221" transform="translate(24 80) rotate(43 96.066 95.87)"/>
+            <path d="M96.181 63.381L96.164 127.835" transform="translate(24 80) rotate(148 96.172 95.608)"/>
+            <path d="M96.124 63.425L96.142 127.985" transform="translate(24 80) rotate(58 96.133 95.705)"/>
+            <path d="M96.22 47.471L96.095 143.818" transform="translate(24 80) rotate(163 96.157 95.645)"/>
+            <path d="M96.053 47.41L96.179 144.085" transform="translate(24 80) rotate(73 96.116 95.748)"/>
+        </g>
+        <g>
+            <path fill="#F5F5F5" d="M14 0L28 5.082 33 18.898 38 8.713 52 13.795 52 25.795 65.5 30.696 58.5 46.155 51.5 43.614 51.5 53.614 38.5 48.894 38.5 39.894 27.5 35.901 27.5 44.901 14 40 14 30 7.5 27.64 0 6.918 14 12z" transform="translate(87 149)"/>
+            <path fill="#0F0F10" d="M47.237 37.923L47.237 48.066 41.952 46.147 41.952 20.957 35 34.671 29.714 32.752 22.761 13.991 22.761 39.181 17.476 37.262 17.476 27.119 9.429 24.197 8.048 20.553 17.476 23.976 17.476 20.31 7.429 16.663 6 13 17.476 17.166 17.476 5.262 24.666 7.872 32.333 28.656 40.048 13.456 47.237 16.066 47.237 27.971 58.714 32.137 57.285 34.762 47.237 31.114 47.237 34.781 56.665 38.203 55.285 40.845z" transform="translate(87 149)"/>
+        </g>
+    </g>
+</svg>

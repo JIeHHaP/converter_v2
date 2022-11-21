@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="266" height="290" viewBox="0 0 266 290">
+    <defs>
+        <ellipse id="oro6rihi7a" cx="32" cy="64" rx="32" ry="64"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <path fill="#0F0F10" stroke="#F5F5F5" stroke-linejoin="bevel" d="M132 96L264 144 132 288 0 240z" transform="translate(-554 -3019) translate(555 3020)"/>
+                <path fill="#0F0F10" stroke="#F5F5F5" stroke-linejoin="bevel" d="M0 144L132 0 132 96 0 240zM132 0L264 48 264 144 132 96z" transform="translate(-554 -3019) translate(555 3020)"/>
+                <g transform="translate(-554 -3019) translate(555 3020) translate(83 63)">
+                    <g>
+                        <path fill="#F5F5F5" stroke="#0F0F10" d="M32 128h40c17.673 0 32-28.654 32-64 0-35.346-14.327-64-32-64H32"/>
+                        <g>
+                            <mask id="5inn5xk8ub" fill="#fff">
+                                <use xlink:href="#oro6rihi7a"/>
+                            </mask>
+                            <use fill="#F5F5F5" stroke="#0F0F10" xlink:href="#oro6rihi7a"/>
+                            <path fill="#101010" stroke="#0F0F10" d="M40 128c17.673 0 32-28.654 32-64C72 28.654 57.673 0 40 0" mask="url(#5inn5xk8ub)" transform="matrix(-1 0 0 1 112 0)"/>
+                        </g>
+                    </g>
+                    <path fill="#F5F5F5" stroke="#0F0F10" d="M101.026 91.1C110.022 85.434 116 75.415 116 64c0-11.439-6.002-21.476-15.028-27.134"/>
+                    <path fill="#F5F5F5" stroke="#0F0F10" d="M52.026 91.1C61.022 85.434 67 75.415 67 64c0-11.439-6.002-21.476-15.028-27.134" transform="matrix(-1 0 0 1 118.972 0)"/>
+                    <circle cx="84" cy="64" r="24" fill="#F5F5F5" stroke="#0F0F10"/>
+                    <path stroke="#000" stroke-linecap="round" d="M75.429 60.645L87.008 66.272 92.046 48" transform="rotate(20 83.737 57.136)"/>
+                </g>
+                <path fill="#F5F5F5" stroke="#0F0F10" stroke-linejoin="bevel" d="M132 192L264 48 264 144 132 288zM0 144L132 192 132 288 0 240z" transform="translate(-554 -3019) translate(555 3020)"/>
+            </g>
+        </g>
+    </g>
+</svg>

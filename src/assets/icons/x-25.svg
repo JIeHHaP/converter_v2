@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#100F10" stroke="#F5F5F5">
+            <g transform="translate(-655 -4288) translate(656 4289)">
+                <circle cx="16" cy="16" r="16"/>
+                <circle cx="40" cy="16" r="16"/>
+                <circle cx="64" cy="16" r="16"/>
+                <circle cx="88" cy="16" r="16"/>
+                <circle cx="112" cy="16" r="16"/>
+                <circle cx="16" cy="40" r="16"/>
+                <circle cx="40" cy="40" r="16"/>
+                <circle cx="64" cy="40" r="16"/>
+                <circle cx="88" cy="40" r="16"/>
+                <circle cx="112" cy="40" r="16"/>
+                <circle cx="16" cy="64" r="16"/>
+                <circle cx="40" cy="64" r="16"/>
+                <circle cx="64" cy="64" r="16"/>
+                <circle cx="88" cy="64" r="16"/>
+                <circle cx="112" cy="64" r="16"/>
+                <circle cx="16" cy="88" r="16"/>
+                <circle cx="40" cy="88" r="16"/>
+                <circle cx="64" cy="88" r="16"/>
+                <circle cx="88" cy="88" r="16"/>
+                <circle cx="112" cy="88" r="16"/>
+                <circle cx="16" cy="112" r="16"/>
+                <circle cx="40" cy="112" r="16"/>
+                <circle cx="64" cy="112" r="16"/>
+                <circle cx="88" cy="112" r="16"/>
+                <circle cx="112" cy="112" r="16"/>
+            </g>
+        </g>
+    </g>
+</svg>

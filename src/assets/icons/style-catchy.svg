@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="104" viewBox="0 0 120 104">
+    <defs>
+        <linearGradient id="418nc62q7a" x1="100%" x2="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#1B2FBC"/>
+            <stop offset="24.784%" stop-color="#42C9D1"/>
+            <stop offset="51.945%" stop-color="#009653"/>
+            <stop offset="77.205%" stop-color="#FFCB16"/>
+            <stop offset="100%" stop-color="#F95623"/>
+        </linearGradient>
+        <linearGradient id="vpm4osgpeb" x1="100%" x2="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#1B2FBC"/>
+            <stop offset="24.784%" stop-color="#42C9D1"/>
+            <stop offset="51.945%" stop-color="#009653"/>
+            <stop offset="77.205%" stop-color="#FFCB16"/>
+            <stop offset="100%" stop-color="#F95623"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-1122 -8141) translate(1122 8141)">
+                <path fill="#0F0F10" d="M92.084 0L116 41.57l-20.712 12L92.083 48v48H28.308V47.751L24.712 54 4 42 27.916.43l.391.227V0h63.777z"/>
+                <ellipse cx="14" cy="48" fill="url(#418nc62q7a)" rx="12" ry="6" transform="rotate(30 14 48)"/>
+                <ellipse cx="106" cy="48" fill="url(#418nc62q7a)" rx="12" ry="6" transform="rotate(-30 106 48)"/>
+                <ellipse cx="60" cy="96" fill="url(#vpm4osgpeb)" rx="32" ry="8"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="118" height="118" viewBox="0 0 118 118">
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(-1003 -246) translate(1004 247)">
+            <circle cx="58" cy="58" r="58" stroke="#0F0F10"/>
+            <g stroke="#0F0F10">
+                <path d="M0 22.627L22.627 0M0 22.627L11.314 33.941" transform="translate(58 35.373)"/>
+            </g>
+            <circle cx="58" cy="6" r="1" fill="#0F0F10"/>
+            <circle cx="58" cy="110" r="1" fill="#0F0F10"/>
+            <circle cx="6" cy="58" r="1" fill="#0F0F10" transform="rotate(90 6 58)"/>
+            <circle cx="32" cy="103.033" r="1" fill="#0F0F10" transform="rotate(30 32 103.033)"/>
+            <circle cx="12.967" cy="32" r="1" fill="#0F0F10" transform="rotate(120 12.967 32)"/>
+            <circle cx="32" cy="12.967" r="1" fill="#0F0F10" transform="rotate(-30 32 12.967)"/>
+            <circle cx="12.967" cy="84" r="1" fill="#0F0F10" transform="rotate(60 12.967 84)"/>
+            <circle cx="110" cy="58" r="1" fill="#0F0F10" transform="rotate(90 110 58)"/>
+            <circle cx="84" cy="12.967" r="1" fill="#0F0F10" transform="rotate(30 84 12.967)"/>
+            <circle cx="103.033" cy="84" r="1" fill="#0F0F10" transform="rotate(120 103.033 84)"/>
+            <circle cx="84" cy="103.033" r="1" fill="#0F0F10" transform="rotate(-30 84 103.033)"/>
+            <circle cx="103.033" cy="32" r="1" fill="#0F0F10" transform="rotate(60 103.033 32)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <path fill="#F5F5F5" d="M15.383 0h9.234c5.349 0 7.289.557 9.244 1.603 1.956 1.046 3.49 2.58 4.536 4.536C39.443 8.094 40 10.034 40 15.383v9.234c0 5.349-.557 7.289-1.603 9.244-1.046 1.956-2.58 3.49-4.536 4.536C31.906 39.443 29.966 40 24.617 40h-9.234c-5.349 0-7.289-.557-9.244-1.603-1.956-1.046-3.49-2.58-4.536-4.536C.557 31.906 0 29.966 0 24.617v-9.234c0-5.349.557-7.289 1.603-9.244 1.046-1.956 2.58-3.49 4.536-4.536C8.094.557 10.034 0 15.383 0z" transform="translate(-1124 -1117) translate(1124 1117)"/>
+                <g fill="#0F0F10">
+                    <g>
+                        <path d="M-6 16H13V17H-6z" transform="translate(-1124 -1117) translate(1124 1117) translate(6 7) rotate(-90 3.5 16.5)"/>
+                        <path d="M1 2H6V3H1z" transform="translate(-1124 -1117) translate(1124 1117) translate(6 7) rotate(-90 3.5 2.5)"/>
+                        <path d="M0.5 6H6.5V7H0.5z" transform="translate(-1124 -1117) translate(1124 1117) translate(6 7)"/>
+                    </g>
+                    <g>
+                        <path d="M0.5 22.5H6.5V23.5H0.5z" transform="translate(-1124 -1117) translate(1124 1117) translate(6 7) translate(11) rotate(-90 3.5 23)"/>
+                        <path d="M-5.5 8.5H12.5V9.5H-5.5z" transform="translate(-1124 -1117) translate(1124 1117) translate(6 7) translate(11) rotate(-90 3.5 9)"/>
+                        <path d="M0 19H7V20H0z" transform="translate(-1124 -1117) translate(1124 1117) translate(6 7) translate(11)"/>
+                    </g>
+                    <g>
+                        <path d="M-2.5 19.5H9.5V20.5H-2.5z" transform="translate(-1124 -1117) translate(1124 1117) translate(6 7) translate(22) rotate(-90 3.5 20)"/>
+                        <path d="M-2.5 5.5H9.5V6.5H-2.5z" transform="translate(-1124 -1117) translate(1124 1117) translate(6 7) translate(22) rotate(-90 3.5 6)"/>
+                        <path d="M0 13H7V14H0z" transform="translate(-1124 -1117) translate(1124 1117) translate(6 7) translate(22)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

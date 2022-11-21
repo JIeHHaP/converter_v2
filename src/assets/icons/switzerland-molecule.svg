@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="418" height="450" viewBox="0 0 418 450">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-511 -6424) translate(512 6425)">
+                <path stroke="#101010" stroke-dasharray="1 2" stroke-linejoin="bevel" d="M400 272l-96-32v96l-96-32v-96l-96-32V80l96 32V16"/>
+                <path stroke="#101010" stroke-dasharray="1 2" d="M208 432L304 336M16 272L112 176M112 304L208 208"/>
+                <path fill="#F5F5F5" stroke="#101010" stroke-dasharray="1 2" d="M208 224c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM112 192c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM304 352c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16z"/>
+                <path stroke="#0F0F10" stroke-linejoin="bevel" d="M112 112L208 144 208 240 304 272 304 368 208 336 208 432 112 400 112 304 16 272 16 176 112 208z"/>
+                <path stroke="#101010" d="M112 113L208 16M208 144L304 48M208 240L304 144M304 272L400 176M304 368L400 272M16 176L112 80"/>
+                <path stroke="#101010" stroke-dasharray="1 2" d="M112 400L208 304M208 336L304 240"/>
+                <path fill="#F5F5F5" stroke="#101010" stroke-dasharray="1 2" d="M208 128c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM304 256c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM208 320c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16z"/>
+                <circle cx="304" cy="272" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <path stroke="#101010" d="M208 432L280.001 359.999M208 16L304 48 304 144 400 176 400 272"/>
+                <circle cx="208" cy="432" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <circle cx="112" cy="400" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <circle cx="112" cy="304" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <circle cx="16" cy="272" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <circle cx="16" cy="176" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <circle cx="112" cy="208" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <circle cx="112" cy="112" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <circle cx="208" cy="144" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <circle cx="208" cy="240" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <circle cx="208" cy="336" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <circle cx="304" cy="368" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <circle cx="400" cy="272" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <circle cx="400" cy="176" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <circle cx="304" cy="144" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <circle cx="304" cy="48" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <circle cx="208" cy="16" r="16" fill="#101010" stroke="#F5F5F5"/>
+                <path stroke="#101010" stroke-linejoin="bevel" d="M112 80L136.849 88.283"/>
+                <circle cx="112" cy="80" r="16" fill="#101010" stroke="#F5F5F5"/>
+            </g>
+        </g>
+    </g>
+</svg>

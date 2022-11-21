@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="378" height="178" viewBox="0 0 378 178">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g fill="#F5F5F5" stroke="#100F10" stroke-linejoin="bevel" transform="translate(-531 -4512) translate(532 4513) translate(148)">
+                    <path d="M96 176V48c0-13.255-21.49-24-48-24S0 34.745 0 48v128" transform="matrix(1 0 0 -1 0 200)"/>
+                    <path d="M96 160c0-13.255-21.49-24-48-24S0 146.745 0 160" transform="matrix(1 0 0 -1 0 296)"/>
+                    <path d="M96 144c0-13.255-21.49-24-48-24S0 130.745 0 144" transform="matrix(1 0 0 -1 0 264)"/>
+                    <path d="M96 128c0-13.255-21.49-24-48-24S0 114.745 0 128" transform="matrix(1 0 0 -1 0 232)"/>
+                    <path d="M96 112c0-13.255-21.49-24-48-24S0 98.745 0 112" transform="matrix(1 0 0 -1 0 200)"/>
+                    <path d="M96 96c0-13.255-21.49-24-48-24S0 82.745 0 96" transform="matrix(1 0 0 -1 0 168)"/>
+                    <path d="M96 80c0-13.255-21.49-24-48-24S0 66.745 0 80" transform="matrix(1 0 0 -1 0 136)"/>
+                    <path d="M96 64c0-13.255-21.49-24-48-24S0 50.745 0 64" transform="matrix(1 0 0 -1 0 104)"/>
+                    <ellipse cx="48" cy="24" rx="48" ry="24"/>
+                </g>
+                <g stroke="#100F10">
+                    <path fill="#F5F5F5" stroke-linejoin="bevel" d="M66 96L132 24 132 48 66 120zM0 72L66 96 66 120 0 96z" transform="translate(-531 -4512) translate(532 4513) translate(0 56)"/>
+                    <path fill="#F5F5F5" stroke-linejoin="bevel" d="M66 0L132 24 66 96 0 72z" transform="translate(-531 -4512) translate(532 4513) translate(0 56)"/>
+                    <path d="M22 80L22 104" transform="translate(-531 -4512) translate(532 4513) translate(0 56)"/>
+                    <path fill="#F5F5F5" d="M44 88L44 112M55 92L55 116M77 84L77 108M88 72L88 96M99 60L99 84M110 48L110 72M121 36L121 60" transform="translate(-531 -4512) translate(532 4513) translate(0 56)"/>
+                    <path d="M11 76L11 100" transform="translate(-531 -4512) translate(532 4513) translate(0 56)"/>
+                    <path fill="#F5F5F5" d="M33 84L33 108" transform="translate(-531 -4512) translate(532 4513) translate(0 56)"/>
+                </g>
+                <g>
+                    <path fill="#100F10" stroke="#100F10" stroke-linejoin="bevel" d="M58 0L116 83 66 139 0 115z" transform="translate(-531 -4512) translate(532 4513) translate(260 37)"/>
+                    <path stroke="#F5F5F5" d="M66 139L58 0" transform="translate(-531 -4512) translate(532 4513) translate(260 37)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

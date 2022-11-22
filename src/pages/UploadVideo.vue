@@ -14,10 +14,6 @@
 export default {};
 </script>
 <style>
-.btn-width {
-  width: 20em;
-  margin-top: 1em;
-}
 .in-dev {
   display: flex;
   flex-direction: column;

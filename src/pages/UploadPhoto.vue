@@ -2,10 +2,8 @@
   <div class="page-container">
     <dad-input />
     <div class="btn-wrapper">
-      <main-button class="btn-width" @click="$router.back()">
-        ← Назад
-      </main-button>
-      <main-button class="btn-width" @click="$router.push('/gallery')"
+      <main-button class="m-t1" @click="$router.back()"> ← Назад </main-button>
+      <main-button class="m-t1" @click="$router.push('/gallery')"
         >Далее →</main-button
       >
     </div>
@@ -29,9 +27,5 @@ export default {
 }
 .page-container::before {
   z-index: -1;
-}
-.btn-width {
-  width: 18em;
-  margin-top: 1em;
 }
 </style>

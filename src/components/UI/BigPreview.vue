@@ -33,18 +33,20 @@ export default {
 .big-preview__img-wrapper {
   width: 25rem;
   height: 25rem;
-  background-color: #f5f5f5;
+  background-color: rgba(245, 245, 245, 0.78);
   border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  transition: color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+  border: 1px dotted #000;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .big-preview__img-wrapper:hover {
   color: #f5f5f5;
   background-color: rgba(15, 15, 16, 0.88);
+  border: 1px solid rgba(15, 15, 16, 0.88);
 }
 
 .big-preview__img {

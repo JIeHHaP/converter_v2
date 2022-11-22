@@ -1,10 +1,10 @@
 <template>
   <div class="page-container">
     <ring-carousel class="carousel__big-text">converter v.2 ///</ring-carousel>
-    <main-button class="btn-width" v-on:click="$router.push('/upload-photo')"
+    <main-button class="m-t1" @:click="$router.push('/upload-photo')"
       >Фото</main-button
     >
-    <main-button class="btn-width" v-on:click="$router.push('/upload-video')"
+    <main-button class="m-t1" @:click="$router.push('/upload-video')"
       >Видео</main-button
     >
   </div>
@@ -35,10 +35,5 @@ export default {};
   right: 0;
   opacity: 0.5;
   z-index: -1;
-}
-
-.btn-width {
-  width: 20em;
-  margin-top: 1em;
 }
 </style>

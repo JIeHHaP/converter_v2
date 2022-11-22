@@ -41,7 +41,7 @@ export default {
   border: 1px dotted #000;
   border-radius: 16px;
   padding: 8px;
-  background-color: #f5f5f5;
+  background-color: rgba(245, 245, 245, 0.78);
   z-index: 1;
   transition: color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
 }

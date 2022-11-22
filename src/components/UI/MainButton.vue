@@ -1,6 +1,6 @@
 <template>
   <button class="btn">
-    <slot></slot>
+    <slot>Я кнопка!</slot>
   </button>
 </template>
 <script>
@@ -54,7 +54,7 @@ export default {
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  /* width: 35em; */
+  width: 18em;
 }
 
 .btn:hover,

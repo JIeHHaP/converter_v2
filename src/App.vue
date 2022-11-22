@@ -20,6 +20,9 @@ export default {};
 .m-lr1 {
   margin: 0 1rem;
 }
+.m-t1 {
+  margin-top: 1rem;
+}
 /* *********fonts*********** */
 @font-face {
   font-family: "AlsWagon";

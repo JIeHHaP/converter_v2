@@ -10,10 +10,10 @@ export default {
 </script>
 <style>
 .small-icon {
-  width: 16px;
-  height: 16px;
-  font-size: 12px;
-  line-height: 16px;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  line-height: 20px;
   border-radius: 50%;
   color: #f5f5f5;
   background: #0f0f10;

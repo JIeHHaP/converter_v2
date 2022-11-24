@@ -23,6 +23,7 @@ export default {};
   width: 100%;
   background: #f7f7f7;
   z-index: 0;
+  overflow: hidden;
 }
 .page-container::before {
   content: "";
@@ -33,7 +34,7 @@ export default {};
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: -1;
 }
 </style>

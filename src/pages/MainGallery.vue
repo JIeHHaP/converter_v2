@@ -40,6 +40,36 @@
       <div class="preview-wrapper">
         <div class="toolbar">
           <small-icon @click="leftActiveChange">?</small-icon>
+          <div v-if="warning" class="warning-icon__container">
+            <svg
+              class="warning-icon"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="493.275px"
+              height="493.275px"
+              viewBox="0 0 493.275 493.275"
+              style="enable-background: new 0 0 493.275 493.275"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M482.641,390.538l-204.6-332.7c-17.199-26.801-44-26.801-61.2,0l-206.6,332.7c-23,36.3-5.7,65,36.3,65h399.8
+                  C490.342,455.638,505.641,426.938,482.641,390.538z M247.441,398.237c-11.5,0-19.1-7.6-19.1-19.1s7.7-19.1,19.1-19.1
+                  c11.5,0,19.1,7.699,19.1,19.1S256.941,398.237,247.441,398.237z M266.541,302.638c0,9.6-7.6,19.1-19.1,19.1s-19.1-7.6-19.1-19.1
+                  v-114.8c0-9.601,7.7-19.101,19.1-19.101c11.5,0,19.1,7.7,19.1,19.101V302.638z"
+                />
+              </g>
+            </svg>
+            <div class="warning-icon__tooltip">
+              <p class="tooltip-text">
+                Маленькое исходное изображение, возможна потеря качества!
+              </p>
+            </div>
+          </div>
         </div>
 
         <big-preview class="m-r5" :imgSrc="'src/assets/images/horz_test.png'"
@@ -63,6 +93,7 @@ export default {
     return {
       showRightModal: false,
       showLeftModal: false,
+      warning: true,
       imgInfo: [
         { name: "01B00022.jpg", imgSize: "800px * 1000px", fileSize: "363kb" },
       ],
@@ -88,7 +119,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .page-container {
   z-index: 0;
   padding: 1rem 0;
@@ -110,7 +141,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .toolbar {
@@ -121,6 +152,50 @@ export default {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  gap: 0.5rem;
+}
+
+.warning-icon__container {
+  position: relative;
+  cursor: pointer;
+}
+
+.warning-icon__container:hover .warning-icon__tooltip,
+.warning-icon__container:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.warning-icon {
+  width: 25px;
+  height: 25px;
+  fill: rgba(216, 8, 8, 0.925);
+  transition: fill 400ms ease;
+}
+.warning-icon:hover {
+  fill: rgba(15, 15, 16, 0.88);
+}
+
+.warning-icon__tooltip {
+  position: absolute;
+  width: 19rem;
+  top: 1.3rem;
+  left: 1.3rem;
+  background-color: rgba(15, 15, 16, 0.88);
+  border-radius: 16px;
+  padding: 1rem;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.tooltip-text {
+  line-height: 16px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 400ms ease;
 }
 
 .img-info__list {

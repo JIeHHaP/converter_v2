@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import MainPage from "../pages/MainPage.vue";
 import MainGallery from "../pages/MainGallery.vue";
+import NewGallery from "../pages/NewGallery.vue";
 import UploadPhoto from "../pages/UploadPhoto.vue";
 import UploadVideo from "../pages/UploadVideo.vue";
 
@@ -12,6 +13,10 @@ const routes = [
   {
     path: "/gallery",
     component: MainGallery,
+  },
+  {
+    path: "/gallery_new",
+    component: NewGallery,
   },
   {
     path: "/upload-photo",

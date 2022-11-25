@@ -3,7 +3,7 @@
     <dad-input />
     <div class="btn-wrapper">
       <main-button class="m-t1" @click="$router.back()"> ← Назад </main-button>
-      <main-button class="m-t1" @click="$router.push('/gallery')"
+      <main-button class="m-t1" @click="$router.push('/gallery_new')"
         >Далее →</main-button
       >
     </div>

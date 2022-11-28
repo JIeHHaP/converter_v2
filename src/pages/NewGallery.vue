@@ -61,7 +61,7 @@
       <div class="preview-wrapper">
         <img
           class="preview-img old-img"
-          src="../assets/images/01B00022.jpg"
+          :src="previewSrc"
           alt="preview image"
         />
       </div>
@@ -76,7 +76,10 @@
         />
       </div>
     </div>
-    <vert-carousel class="vert-position"></vert-carousel>
+    <vert-carousel
+      class="vert-position"
+      @activeThumbSrc="getPreviewSrc"
+    ></vert-carousel>
   </div>
 </template>
 <script>
@@ -85,6 +88,8 @@ export default {
     return {
       bgBlack: false,
       overlayActive: false,
+      previewSrc: "",
+      changedPreviewSrc: "",
     };
   },
   methods: {
@@ -93,6 +98,9 @@ export default {
     },
     toggleOverlay() {
       this.overlayActive = !this.overlayActive;
+    },
+    getPreviewSrc(newSrc) {
+      this.previewSrc = newSrc;
     },
   },
 };
@@ -151,6 +159,7 @@ export default {
   width: 461px;
   object-fit: contain;
   border: 1px dotted #000;
+  border-radius: 16px;
 }
 
 .preview-overlay {

@@ -1,7 +1,7 @@
 <template>
   <div class="carousel">
     <div
-      @click="active"
+      @click="addActiveClass"
       class="thumb-wrapper"
       v-for="thumb in thumbs"
       :key="thumb.id"
@@ -296,7 +296,7 @@ export default {
         activeThumbs[0].classList.remove("active-thumb");
       }
     },
-    active(event) {
+    addActiveClass(event) {
       if (
         event.target &&
         event.target.tagName == "IMG" &&

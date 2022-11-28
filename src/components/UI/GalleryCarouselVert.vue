@@ -75,7 +75,6 @@ export default {
         ".active-thumb .thumbnail-img"
       ).src;
       this.$emit("activeThumbSrc", activeSrc);
-      console.log(activeSrc);
     },
   },
   mounted() {
@@ -125,7 +124,7 @@ export default {
 
 .thumbnail {
   width: 100%;
-  height: 124px;
+  height: 135px;
   position: relative;
   border: 1px dotted #000;
   border-radius: 16px;

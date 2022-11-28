@@ -1,6 +1,6 @@
 <template>
   <div class="page-container" :class="{ 'black-bg': bgBlack }">
-    <small-icon class="btn-back">←</small-icon>
+    <small-icon class="btn-back" @:click="$router.push('/')">←</small-icon>
     <div class="bottom-toolbar">
       <div class="save-one-wrapper">
         <img
@@ -126,6 +126,8 @@ export default {
   height: 40px;
   font-size: 30px;
   line-height: 40px;
+  cursor: pointer;
+  z-index: 9;
 }
 
 .bottom-toolbar {

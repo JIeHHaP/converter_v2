@@ -1,62 +1,13 @@
 <template>
   <div class="page-container" :class="{ 'black-bg': bgBlack }">
     <small-icon class="btn-back" @:click="$router.push('/')">←</small-icon>
-    <div class="bottom-toolbar">
-      <div class="save-one-wrapper">
-        <img
-          class="save-one-btn"
-          src="../assets/icons/download-file.svg"
-          alt="download file"
-        />
-        <div class="toolbar__tooltip">
-          <p class="tooltip-text__save-one">Сохранить текущее изображение.</p>
-        </div>
-      </div>
-      <div class="save-archive-wrapper">
-        <img
-          class="save-archive-btn"
-          src="../assets/icons/download-archive.svg"
-          alt="download archive"
-        />
-        <div class="toolbar__tooltip">
-          <p class="tooltip-text__save-archive">
-            Сохранить все изображения архивом.
-          </p>
-        </div>
-      </div>
-      <div class="swap-bg-wrapper" @click="changeBg">
-        <img
-          class="swap-bg-btn"
-          src="../assets/icons/dark-theme.svg"
-          alt="swap background"
-        />
-        <div class="toolbar__tooltip">
-          <p class="tooltip-text__swap-bg">Сменить цвет фона.</p>
-        </div>
-      </div>
-      <div class="overlay-wrapper" @click="toggleOverlay">
-        <img
-          class="overlay-btn"
-          src="../assets/icons/overlay2.svg"
-          alt="overlay images"
-        />
-        <div class="toolbar__tooltip">
-          <p class="tooltip-text__overlay">Режим наложения.</p>
-        </div>
-      </div>
-      <div class="warning-wrapper">
-        <img
-          class="warning-icon"
-          src="../assets/icons/warning.svg"
-          alt="warning-icon"
-        />
-        <div class="toolbar__tooltip">
-          <p class="tooltip-text__warning">
-            Маленькое исходное изображение, возможна потеря качества!
-          </p>
-        </div>
-      </div>
-    </div>
+    <gallery-toolbar
+      :bgBlack="bgBlack"
+      :overlayOn="overlayActive"
+      :warningActive="warningActive"
+      @changeBG="changeBg"
+      @toggleOverlay="toggleOverlay"
+    ></gallery-toolbar>
     <div class="preview-container">
       <div class="preview-wrapper">
         <img
@@ -79,6 +30,7 @@
     <vert-carousel
       class="vert-position"
       @activeThumbSrc="getPreviewSrc"
+      @checkImgSize="toggleWarning"
     ></vert-carousel>
   </div>
 </template>
@@ -88,16 +40,20 @@ export default {
     return {
       bgBlack: false,
       overlayActive: false,
+      warningActive: false,
       previewSrc: "",
       changedPreviewSrc: "",
     };
   },
   methods: {
-    changeBg() {
-      this.bgBlack = !this.bgBlack;
+    changeBg(swapBg) {
+      this.bgBlack = swapBg;
     },
-    toggleOverlay() {
-      this.overlayActive = !this.overlayActive;
+    toggleOverlay(overlayActive) {
+      this.overlayActive = overlayActive;
+    },
+    toggleWarning(isWarning) {
+      this.warningActive = isWarning;
     },
     getPreviewSrc(newSrc) {
       this.previewSrc = newSrc;
@@ -120,8 +76,8 @@ export default {
 }
 .page-container .btn-back {
   position: absolute;
-  top: 0.4rem;
-  left: 0.4rem;
+  top: 1rem;
+  left: 1rem;
   width: 40px;
   height: 40px;
   font-size: 30px;
@@ -129,7 +85,7 @@ export default {
   cursor: pointer;
   z-index: 9;
 }
-
+/* 
 .bottom-toolbar {
   position: absolute;
   bottom: 0;
@@ -142,7 +98,7 @@ export default {
   justify-content: space-around;
   align-items: center;
   z-index: 10;
-}
+} */
 
 .preview-container {
   display: flex;
@@ -178,7 +134,7 @@ export default {
 .old-img {
   z-index: 2;
 }
-
+/* 
 .save-one-btn,
 .save-archive-btn,
 .swap-bg-btn,
@@ -187,6 +143,13 @@ export default {
   width: 30px;
   height: 30px;
   cursor: pointer;
+}
+
+.warning-wrapper {
+  display: none;
+}
+.warning-wrapper.warning-active {
+  display: flex;
 }
 
 .warning-wrapper:hover .tooltip-text__warning,
@@ -228,4 +191,34 @@ export default {
   visibility: hidden;
   transition: opacity 400ms ease;
 }
+
+.shake {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+} */
 </style>

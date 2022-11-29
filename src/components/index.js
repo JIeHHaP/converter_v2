@@ -6,6 +6,7 @@ import GalleryCarouselVert from "./UI/GalleryCarouselVert.vue";
 import BigPreview from "./UI/BigPreview.vue";
 import SideModal from "./UI/SideModal.vue";
 import SmallIcon from "./UI/SmallIcon.vue";
+import GalleryToolbar from "./UI/GalleryToolbar.vue";
 
 export default [
   MainButton,
@@ -16,4 +17,5 @@ export default [
   BigPreview,
   SideModal,
   SmallIcon,
+  GalleryToolbar,
 ];

@@ -52,9 +52,6 @@ export default {
     closeModal() {
       this.$emit("changeActive", !this.isActive);
     },
-    console(event) {
-      console.log(event.target);
-    },
   },
 };
 </script>

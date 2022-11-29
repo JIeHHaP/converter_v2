@@ -1,6 +1,8 @@
 <template>
   <div class="vert-carousel">
-    <small-icon class="arrow top-arrow" v-if="galleryScroll">↑</small-icon>
+    <small-icon class="arrow top-arrow" v-if="galleryScroll" @click="slideTop"
+      >↑</small-icon
+    >
     <div
       class="thumbnails-wrapper"
       :class="{ 'center-pos': centerPosition, scroll: galleryScroll }"
@@ -8,19 +10,25 @@
     >
       <div
         class="thumbnail"
-        @click="addActiveClass"
+        @click="addActiveClass($event), checkNaturalImgSize($event)"
         v-for="thumbnail in thumbnails"
         :key="thumbnail.id"
       >
         <img class="thumbnail-img" :src="thumbnail.src" alt="thumbnail image" />
         <img
           class="close-btn"
+          @click.stop="markThumbForDeletion"
           src="../../assets/icons/close-white.svg"
           alt="close btn"
         />
       </div>
     </div>
-    <small-icon class="arrow bottom-arrow" v-if="galleryScroll">↓</small-icon>
+    <small-icon
+      class="arrow bottom-arrow"
+      v-if="galleryScroll"
+      @click="slideBottom"
+      >↓</small-icon
+    >
   </div>
 </template>
 <script>
@@ -76,11 +84,57 @@ export default {
       ).src;
       this.$emit("activeThumbSrc", activeSrc);
     },
+    checkNaturalImgSize(event) {
+      let isWarning;
+      if (event.target && event.target.tagName == "IMG") {
+        if (
+          event.target.naturalHeight <= 1000 ||
+          event.target.naturalWidth <= 800
+        ) {
+          isWarning = true;
+        } else {
+          isWarning = false;
+        }
+      }
+      this.$emit("checkImgSize", isWarning);
+    },
+    markThumbForDeletion(event) {
+      if (event.target && event.target.classList.contains("close-btn")) {
+        if (!event.target.parentElement.classList.contains("delete-thumb")) {
+          event.target.parentElement.classList.add("delete-thumb");
+          event.target.src = "src/assets/icons/restore.svg";
+        } else {
+          event.target.parentElement.classList.remove("delete-thumb");
+          event.target.src = "src/assets/icons/close-white.svg";
+        }
+      }
+    },
+    slideBottom() {
+      const gallery = document.querySelector(".thumbnails-wrapper");
+      gallery.scrollTop += 140;
+    },
+    slideTop() {
+      const gallery = document.querySelector(".thumbnails-wrapper");
+      gallery.scrollTop -= 140;
+    },
+    slidePushKey() {
+      if (this.thumbnails.length > 4) {
+        document.addEventListener("keydown", (event) => {
+          if (event.code === "ArrowUp") {
+            this.slideTop();
+          }
+          if (event.code === "ArrowDown") {
+            this.slideBottom();
+          }
+        });
+      }
+    },
   },
   mounted() {
     this.initFirstElemPos();
     this.addActiveFirstElement();
     this.getActiveThumbSrc();
+    this.slidePushKey();
   },
 };
 </script>
@@ -124,7 +178,7 @@ export default {
 
 .thumbnail {
   width: 100%;
-  height: 135px;
+  height: 145px;
   position: relative;
   border: 1px dotted #000;
   border-radius: 16px;
@@ -135,8 +189,17 @@ export default {
   border: 2px solid #000;
 }
 
+.delete-thumb {
+  background-color: rgb(216, 103, 103);
+  border: 1px solid rgb(173, 83, 83);
+}
+
 .thumbnail:hover {
   background-color: rgba(16, 16, 15, 0.88);
+}
+
+.thumbnail:hover.delete-thumb {
+  background-color: rgb(216, 103, 103);
 }
 
 .thumbnail-img {
@@ -149,11 +212,15 @@ export default {
   position: absolute;
   top: 10px;
   right: 10px;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   opacity: 0;
   visibility: 0;
   cursor: pointer;
+  background-color: #000;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding: 3px;
 }
 
 .thumbnail:hover .close-btn {

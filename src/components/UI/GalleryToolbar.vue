@@ -42,10 +42,7 @@
         <p class="tooltip-text__overlay">Режим наложения.</p>
       </div>
     </div>
-    <div
-      class="warning-wrapper"
-      :class="{ 'warning-active shake': warningActive }"
-    >
+    <div class="warning-wrapper" :class="{ 'warning-active': warningActive }">
       <img
         class="warning-icon"
         src="src/assets/icons/warning.svg"
@@ -96,7 +93,7 @@ export default {
   width: 300px;
   height: 50px;
   border-radius: 16px 16px 0 0;
-  background-color: rgba(16, 16, 15, 0.88);
+  background-color: rgba(15, 15, 16, 0.88);
   display: flex;
   justify-content: space-around;
   align-items: center;

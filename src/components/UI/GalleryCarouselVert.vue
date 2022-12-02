@@ -14,8 +14,12 @@
         v-for="thumbnail in thumbnails"
         :key="thumbnail.id"
       >
-        <img class="thumbnail-img" :src="thumbnail.src" alt="thumbnail image" />
+        <div class="spinner__bg" v-if="(thumbnail.src == '')">
+          <spinner-bounce v-if="(thumbnail.src == '')"></spinner-bounce>
+        </div>
+        <img v-if="(thumbnail.src != '')" class="thumbnail-img" :src="thumbnail.src" alt="thumbnail image" />
         <img
+          v-if="(thumbnail.src != '')"
           class="close-btn"
           @click.stop="markThumbForDeletion"
           src="../../assets/icons/close-white.svg"
@@ -39,9 +43,9 @@ export default {
       thumbnails: [
         { id: 12, src: "src/assets/images/01B00022.jpg" },
         { id: 2, src: "src/assets/images/01B00015.jpg" },
-        { id: 3, src: "src/assets/images/01B00026.jpg" },
+        { id: 3, src: "" },
         { id: 4, src: "src/assets/images/01B00038.jpg" },
-        { id: 5, src: "src/assets/images/01C00013.jpg" },
+        { id: 5, src: "" },
         { id: 5, src: "src/assets/images/01C00013.jpg" },
       ],
       centerPosition: false,
@@ -139,6 +143,16 @@ export default {
 };
 </script>
 <style scoped>
+.spinner__bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: 145px;
+  border-radius: 15px;
+  background-color: rgba(15,15,16, 0.1);
+}
+
 .vert-carousel {
   display: flex;
   flex-direction: column;

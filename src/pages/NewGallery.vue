@@ -1,5 +1,8 @@
 <template>
   <div class="page-container" :class="{ 'black-bg': bgBlack }">
+    <promt-top
+      >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </promt-top>
     <small-icon class="btn-back" @:click="$router.push('/')">←</small-icon>
     <gallery-toolbar
       :bgBlack="bgBlack"
@@ -11,14 +14,14 @@
     <div class="preview-container">
       <div class="preview-wrapper">
         <small-icon class="preview-info-btn">i</small-icon>
-        <!-- <div class="preview-info-tooltip">
+        <div class="preview-info-tooltip">
           <span class="preview-info-title">Имя файла:</span>
-          <span class="file-name-text"></span>
+          <span class="file-name-text">ffkd3430.png</span>
           <span class="preview-info-title">Размер изображения:</span>
-          <span class="img-size-text"></span>
-          <span class="preview-info-title">Размер файла</span>
-          <span class="file-size-text"></span>
-        </div> -->
+          <span class="img-size-text">1000 * 800</span>
+          <span class="preview-info-title">Размер файла:</span>
+          <span class="file-size-text">540kb</span>
+        </div>
         <img
           class="preview-img old-img"
           :src="previewSrc"
@@ -31,12 +34,12 @@
       >
         <small-icon class="preview-info-btn">i</small-icon>
         <div class="preview-info-tooltip">
-          <span class="preview-info-title"></span>
-          <span class="file-name-text"></span>
-          <span class="preview-info-title"></span>
-          <span class="img-size-text"></span>
-          <span class="preview-info-title"></span>
-          <span class="file-size-text"></span>
+          <span class="preview-info-title">Имя файла:</span>
+          <span class="file-name-text">ffkd3430.png</span>
+          <span class="preview-info-title">Размер изображения:</span>
+          <span class="img-size-text">1000 * 800</span>
+          <span class="preview-info-title">Размер файла:</span>
+          <span class="file-size-text">540kb</span>
         </div>
         <img
           class="preview-img new-img"
@@ -125,6 +128,34 @@ export default {
   z-index: 55;
   top: 10px;
   left: 10px;
+}
+.preview-info-tooltip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: rgba(15, 15, 16, 0.77);
+  border-radius: 16px;
+  padding: 1rem;
+  color: #fff;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 15;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 400ms ease;
+}
+
+.preview-info-btn:hover + .preview-info-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.preview-info-title {
+  text-transform: uppercase;
+  font-size: 14px;
 }
 .preview-img {
   height: 576px;

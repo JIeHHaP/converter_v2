@@ -7,11 +7,10 @@
 </template>
 <script>
 export default {
-  name: "spinner-bounce"
-}
+  name: "spinner-bounce",
+};
 </script>
 <style scoped>
-
 .spinner {
   width: 65px;
   display: flex;
@@ -37,7 +36,9 @@ export default {
 }
 
 @keyframes sk-bouncedelay {
-  0%, 80%, 100% {
+  0%,
+  80%,
+  100% {
     transform: scale(1);
   }
   40% {

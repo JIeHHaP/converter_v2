@@ -14,12 +14,17 @@
         v-for="thumbnail in thumbnails"
         :key="thumbnail.id"
       >
-        <div class="spinner__bg" v-if="(thumbnail.src == '')">
-          <spinner-bounce v-if="(thumbnail.src == '')"></spinner-bounce>
+        <div class="spinner__bg" v-if="thumbnail.src == ''">
+          <spinner-bounce v-if="thumbnail.src == ''"></spinner-bounce>
         </div>
-        <img v-if="(thumbnail.src != '')" class="thumbnail-img" :src="thumbnail.src" alt="thumbnail image" />
         <img
-          v-if="(thumbnail.src != '')"
+          v-if="thumbnail.src != ''"
+          class="thumbnail-img"
+          :src="thumbnail.src"
+          alt="thumbnail image"
+        />
+        <img
+          v-if="thumbnail.src != ''"
           class="close-btn"
           @click.stop="markThumbForDeletion"
           src="../../assets/icons/close-white.svg"
@@ -147,10 +152,10 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width:100%;
+  width: 100%;
   height: 145px;
   border-radius: 15px;
-  background-color: rgba(15,15,16, 0.1);
+  background-color: rgba(15, 15, 16, 0.1);
 }
 
 .vert-carousel {

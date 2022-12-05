@@ -7,7 +7,8 @@ import BigPreview from "./UI/BigPreview.vue";
 import SideModal from "./UI/SideModal.vue";
 import SmallIcon from "./UI/SmallIcon.vue";
 import GalleryToolbar from "./UI/GalleryToolbar.vue";
-import SpinnerBounce from "./UI/SpinnerBounce.vue"
+import SpinnerBounce from "./UI/SpinnerBounce.vue";
+import PromptTop from "./UI/PromptTop.vue";
 
 export default [
   MainButton,
@@ -19,5 +20,6 @@ export default [
   SideModal,
   SmallIcon,
   GalleryToolbar,
-  SpinnerBounce
+  SpinnerBounce,
+  PromptTop,
 ];

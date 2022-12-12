@@ -28,13 +28,13 @@
   </form>
 </template>
 <script>
-import axios from "axios";
+// import axios from "axios";
 export default {
   name: "dad-input",
   data() {
     return {
       photos: [],
-      id: 123,
+      webSocetId: "",
       activeForm: false,
     };
   },
@@ -52,25 +52,27 @@ export default {
       console.log(this.photos);
     },
     sendPhotos() {
-      const fData = new FormData();
-      this.photos.forEach(function (photo) {
-        fData.append("photo", photo, photo.name);
+      // const fData = new FormData();
+      // this.photos.forEach(function (photo) {
+      //   fData.append("photo", photo, photo.name);
+      // });
+      // axios
+      //   .post(
+      //     "http://185.173.94.239/converter/good_get_converted_image.php",
+      //     fData
+      //   )
+      //   .then((res) => {
+      //     console.log(res);
+      //   });
+      const socket = new WebSocket(
+        "ws://185.173.94.239:10501?id=" + this.webSocetId
+      );
+      socket.addEventListener("message", (event) => {
+        console.log("Message from server ", event.data);
       });
-      axios
-        .post(
-          "http://185.173.94.239/converter/good_get_converted_image.php",
-          fData
-        )
-        .then((res) => {
-          console.log(res);
-        });
-      // const socket = new WebSocket("ws://185.173.94.239:10501?id=" + this.id);
-      // socket.addEventListener("message", (event) => {
-      //   console.log("Message from server ", event.data);
-      // });
-      // socket.addEventListener("open", () => {
-      //   socket.send("Hello Server!");
-      // });
+      socket.addEventListener("open", () => {
+        socket.send("Hello Server!");
+      });
     },
     addAndSend(event) {
       this.addPhotos(event);
@@ -81,6 +83,12 @@ export default {
       this.addPhotosDrop(event);
       this.sendPhotos();
     },
+    getId() {
+      this.webSocetId = Math.random().toString(16).slice(2);
+    },
+  },
+  mounted() {
+    this.getId();
   },
 };
 </script>

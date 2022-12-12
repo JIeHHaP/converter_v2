@@ -1,13 +1,5 @@
 <template>
-  <div class="page-container" :class="{ 'black-bg': bgBlack }">
-    <small-icon class="btn-back" @:click="$router.push('/')">←</small-icon>
-    <!-- <gallery-toolbar
-      :bgBlack="bgBlack"
-      :overlayOn="overlayActive"
-      :warningActive="warningActive"
-      @changeBG="changeBg"
-      @toggleOverlay="toggleOverlay"
-    ></gallery-toolbar> -->
+  <div class="page-container">
     <div class="preview-container">
       <div class="preview-wrapper">
         <small-icon class="preview-info-btn">i</small-icon>
@@ -45,11 +37,6 @@
         />
       </div>
     </div>
-    <vert-carousel
-      class="vert-position"
-      @activeThumbSrc="getPreviewSrc"
-      @checkImgSize="toggleWarning"
-    ></vert-carousel>
   </div>
 </template>
 <script>
@@ -79,7 +66,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style>
 .page-container {
   display: flex;
   flex-direction: row;

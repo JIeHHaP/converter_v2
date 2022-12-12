@@ -1,11 +1,14 @@
 <template>
   <div class="page-container">
-    <dad-input />
+    <dad-input
+      @change="$router.push('/gallery_new')"
+      @drop="$router.push('/gallery_new')"
+    />
     <div class="btn-wrapper">
       <main-button class="m-t1" @click="$router.back()"> ← Назад </main-button>
-      <main-button class="m-t1" @click="$router.push('/gallery_new')"
+      <!-- <main-button class="m-t1" @click="$router.push('/gallery_new')"
         >Далее →</main-button
-      >
+      > -->
     </div>
   </div>
 </template>
@@ -14,7 +17,11 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    console() {
+      console.log("123");
+    },
+  },
 };
 </script>
 <style scoped>

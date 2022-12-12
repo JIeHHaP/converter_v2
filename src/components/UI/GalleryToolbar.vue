@@ -87,12 +87,12 @@ export default {
 </script>
 <style scoped>
 .bottom-toolbar {
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  left: 34%;
-  width: 300px;
+  left: 34%; */
+  width: 100%;
   height: 50px;
-  border-radius: 16px 16px 0 0;
+  /* border-radius: 16px 16px 0 0; */
   background-color: rgba(15, 15, 16, 0.88);
   display: flex;
   justify-content: space-around;

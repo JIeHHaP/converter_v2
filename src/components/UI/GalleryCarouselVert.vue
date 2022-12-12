@@ -1,8 +1,24 @@
 <template>
   <div class="vert-carousel">
-    <small-icon class="arrow top-arrow" v-if="galleryScroll" @click="slideTop"
-      >↑</small-icon
-    >
+    <div class="toolbar">
+      <div class="toolbar__messange">
+        <p>
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+          вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+          латинице с начала XVI века. В то время некий безымянный печатник
+          создал большую коллекцию размеров и форм шрифтов, используя Lorem
+          Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
+          без заметных изменений пять веков, но и перешагнул в электронный
+          дизайн. Его популяризации в новое время послужили публикация листов
+          Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
+          время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах
+          которых используется Lorem Ipsum.
+        </p>
+      </div>
+      <div class="toolbar__list">
+        <gallery-toolbar></gallery-toolbar>
+      </div>
+    </div>
     <div
       class="thumbnails-wrapper"
       :class="{ 'center-pos': centerPosition, scroll: galleryScroll }"
@@ -32,12 +48,6 @@
         />
       </div>
     </div>
-    <small-icon
-      class="arrow bottom-arrow"
-      v-if="galleryScroll"
-      @click="slideBottom"
-      >↓</small-icon
-    >
   </div>
 </template>
 <script>
@@ -47,6 +57,11 @@ export default {
     return {
       thumbnails: [
         { id: 12, src: "src/assets/images/01B00022.jpg" },
+        { id: 2, src: "src/assets/images/01B00015.jpg" },
+        { id: 3, src: "" },
+        { id: 4, src: "src/assets/images/01B00038.jpg" },
+        { id: 5, src: "" },
+        { id: 5, src: "src/assets/images/01C00013.jpg" },
         { id: 2, src: "src/assets/images/01B00015.jpg" },
         { id: 3, src: "" },
         { id: 4, src: "src/assets/images/01B00038.jpg" },
@@ -148,6 +163,36 @@ export default {
 };
 </script>
 <style scoped>
+.toolbar {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toolbar__messange {
+  width: 100%;
+  height: 100%;
+  padding: 0.8rem;
+  overflow-y: auto;
+}
+
+.toolbar__messange::-webkit-scrollbar {
+  display: none;
+}
+
+.toolbar__messange p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.toolbar__list {
+  width: 100%;
+}
+
 .spinner__bg {
   display: flex;
   justify-content: center;
@@ -161,30 +206,27 @@ export default {
 .vert-carousel {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 100vh;
-  width: 13%;
+  width: 25%;
   border-left: 1px solid #000;
   background-color: #f5f5f5;
-  padding: 1rem 0.5rem;
-  gap: 1rem;
+  /* padding: 1rem 0.5rem; */
+  /* gap: 1rem; */
 }
 
 .thumbnails-wrapper {
   width: 100%;
-  height: 100%;
+  height: 70%;
   display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: start;
   gap: 0.5rem;
   overflow-y: hidden;
-  position: relative;
-}
-
-.thumbnails-wrapper.center-pos {
-  justify-content: center;
+  padding: 5px;
 }
 
 .thumbnails-wrapper.scroll {
@@ -196,8 +238,8 @@ export default {
 }
 
 .thumbnail {
-  width: 100%;
-  height: 145px;
+  width: 46%;
+  height: 27%;
   position: relative;
   border: 1px dotted #000;
   border-radius: 16px;
